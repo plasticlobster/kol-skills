@@ -1,5 +1,5 @@
+notify plasticlobster;
 since r15338;
-notify PlasticLobster;
 
 string get_lovebug() {
    if (get_property("lovebugsUnlocked") == 'true') {
