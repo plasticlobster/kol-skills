@@ -1,0 +1,19 @@
+100	Summon Snowcones
+200	Summon Stickers
+300	Summon Sugar Sheets
+400	Summon Clip Art
+500	Summon Rad Libs
+600	Summon Smithsness
+700	Summon Candy Heart
+800	Summon Party Favor
+900	Summon Love Song
+1000	Summon BRICKOs
+1100	Summon Dice
+1200	Summon Resolutions
+1300	Summon Taffy
+1400	Summon Hilarious Objects
+1500	Summon Tasteful Items
+1600	Summon Trading Cards
+1700	Summon Geeky Gifts
+1800	Summon Confiscated Things
+
