@@ -53,5 +53,5 @@ void main() {
    string url = post(final_skills);
 
    print("Success! Your skills have been uploaded!", "green");
-   print_html("Visit: <a href='"+url+"'>+url+"</a> to see your skill breakdown.", "blue");
+   print_html("Visit: <a href='"+url+"'>"+url+"</a> to see your skill breakdown.", "blue");
 }
