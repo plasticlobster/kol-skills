@@ -39,10 +39,13 @@ string get_other_skills() {
 }
 
 string post(string skills) {
-   return visit_url("http://www.plasticlobster.com/index.php?mafia=true&skills="+url_encode(skills));
+   return visit_url("http://www.plasticlobster.com/index.php?mafia=true&login="+url_encode(my_name())+"&skills="+url_encode(skills));
 }
 
 void main() {
+   print("PlasticLobster (#1919839)'s Kingdom of Loathing Skill Tracker Analysis");
+   print("This script will upload your skills to a unique page that will allow you to keep track of your perming.");
+   print("Gathering Skill Information...", "green");
    string regular_skills = get_other_skills();
    skill[int] bookshelf_skills = get_bookshelf_skills();
    string bss = "";
@@ -53,5 +56,6 @@ void main() {
    string url = post(final_skills);
 
    print("Success! Your skills have been uploaded!", "green");
-   print_html("Visit: <a href='"+url+"'>"+url+"</a> to see your skill breakdown.");
+   print_html("Visit: <a href='"+url+"'>"+url+"</a> to see your skill breakdown for this submission.");
+   print_html("Or Bookmark: <a href='http://www.plasticlobster.com/kolshow.php?user="+url_encode(my_name())+"'>http://www.plasticlobster.com/kolshow.php?user="+url_encode(my_name())+"</a> to see your latest submissions at any time.");
 }
