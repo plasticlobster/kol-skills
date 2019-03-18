@@ -38,6 +38,16 @@ string get_other_skills() {
    return skills;
 }
 
+string get_daycare() {
+   string wrongside = visit_url("/place.php?whichplace=town_wrong");
+   string skills = "";
+   matcher skill_matcher = create_matcher("<div id=townwrong_boxingdaycare", wrongside);
+   if (skill_matcher.find()) {
+      skills = "Army of Toddlers (HP)\r\n";
+   }
+   return skills;
+}
+
 string post(string skills) {
    return visit_url("http://www.plasticlobster.com/index.php?mafia=true&login="+url_encode(my_name())+"&skills="+url_encode(skills));
 }
@@ -52,7 +62,7 @@ void main() {
    foreach a in bookshelf_skills {
       bss = bss + to_string(bookshelf_skills[a]) + " (HP)\r\n";
    }
-   string final_skills = regular_skills + bss + get_lovebug();
+   string final_skills = regular_skills + bss + get_lovebug() + get_daycare();
    string url = post(final_skills);
 
    print("Success! Your skills have been uploaded!", "green");
