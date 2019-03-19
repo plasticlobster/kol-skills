@@ -16,9 +16,7 @@ To update, type:
 ----------------------
 <pre>
 svn update plasticlobster-kol-skills-branches-Release
-svn sync
 </pre>
-svn sync is necessary because sometimes KoLMafia doesn't move updates to the scripts folder.
 
 To remove:
 ----------------------
