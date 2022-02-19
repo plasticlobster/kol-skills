@@ -67,5 +67,5 @@ void main() {
 
    print("Success! Your skills have been uploaded!", "green");
    print_html("Visit: <a href='"+url+"'>"+url+"</a> to see your skill breakdown for this submission.");
-   print_html("Or Bookmark: <a href='http://www.plasticlobster.com/kolshow.php?user="+url_encode(my_name())+"'>http://www.plasticlobster.com/kolshow.php?user="+url_encode(my_name())+"</a> to see your latest submissions at any time.");
+   print_html("Or Bookmark: <a href='https://www.plasticlobster.com/kolshow.php?user="+url_encode(my_name())+"'>https://www.plasticlobster.com/kolshow.php?user="+url_encode(my_name())+"</a> to see your latest submissions at any time.");
 }
