@@ -49,7 +49,7 @@ string get_daycare() {
 }
 
 string post(string skills) {
-   return visit_url("http://www.plasticlobster.com/index.php?mafia=true&login="+url_encode(my_name())+"&skills="+url_encode(skills));
+   return visit_url("https://www.plasticlobster.com/index.php?mafia=true&login="+url_encode(my_name())+"&skills="+url_encode(skills));
 }
 
 void main() {
